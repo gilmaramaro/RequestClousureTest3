@@ -17,6 +17,12 @@
 		755BF28F29D21EBF007A33EE /* RequestClousureTest3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755BF28E29D21EBF007A33EE /* RequestClousureTest3Tests.swift */; };
 		755BF29929D21EBF007A33EE /* RequestClousureTest3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755BF29829D21EBF007A33EE /* RequestClousureTest3UITests.swift */; };
 		755BF29B29D21EBF007A33EE /* RequestClousureTest3UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755BF29A29D21EBF007A33EE /* RequestClousureTest3UITestsLaunchTests.swift */; };
+		755BF2A829D221DA007A33EE /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755BF2A729D221DA007A33EE /* Pizza.swift */; };
+		755BF2AA29D22207007A33EE /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755BF2A929D22207007A33EE /* Request.swift */; };
+		755BF2AD29D22221007A33EE /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755BF2AB29D22221007A33EE /* MyTableViewCell.swift */; };
+		755BF2AE29D22221007A33EE /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 755BF2AC29D22221007A33EE /* MyTableViewCell.xib */; };
+		755BF2B029D22240007A33EE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755BF2AF29D22240007A33EE /* SecondViewController.swift */; };
+		755BF2B229D22261007A33EE /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755BF2B129D22261007A33EE /* ThirdViewController.swift */; };
 		97E59B18DCC6DD9AE741F599 /* Pods_RequestClousureTest3Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73750E850435DE7D9C318142 /* Pods_RequestClousureTest3Tests.framework */; };
 		D8828D93513816A66E3D770F /* Pods_RequestClousureTest3_RequestClousureTest3UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A6097A1D4AC0D4AFEE25ACF /* Pods_RequestClousureTest3_RequestClousureTest3UITests.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +63,12 @@
 		755BF29429D21EBF007A33EE /* RequestClousureTest3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RequestClousureTest3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		755BF29829D21EBF007A33EE /* RequestClousureTest3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestClousureTest3UITests.swift; sourceTree = "<group>"; };
 		755BF29A29D21EBF007A33EE /* RequestClousureTest3UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestClousureTest3UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		755BF2A729D221DA007A33EE /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
+		755BF2A929D22207007A33EE /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		755BF2AB29D22221007A33EE /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		755BF2AC29D22221007A33EE /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
+		755BF2AF29D22240007A33EE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		755BF2B129D22261007A33EE /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		8A6097A1D4AC0D4AFEE25ACF /* Pods_RequestClousureTest3_RequestClousureTest3UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RequestClousureTest3_RequestClousureTest3UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8D867F9DCD3091A0E550A8 /* Pods-RequestClousureTest3-RequestClousureTest3UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RequestClousureTest3-RequestClousureTest3UITests.release.xcconfig"; path = "Target Support Files/Pods-RequestClousureTest3-RequestClousureTest3UITests/Pods-RequestClousureTest3-RequestClousureTest3UITests.release.xcconfig"; sourceTree = "<group>"; };
 		B45C4C1F9D46455B2FDCCC05 /* Pods-RequestClousureTest3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RequestClousureTest3.release.xcconfig"; path = "Target Support Files/Pods-RequestClousureTest3/Pods-RequestClousureTest3.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +113,6 @@
 				28816C1782EB78F73CA1408F /* Pods-RequestClousureTest3Tests.debug.xcconfig */,
 				1EF73AD45380EFE02E4BE2B3 /* Pods-RequestClousureTest3Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,6 +155,12 @@
 				755BF27929D21EBE007A33EE /* SceneDelegate.swift */,
 				755BF27B29D21EBE007A33EE /* ViewController.swift */,
 				755BF27D29D21EBE007A33EE /* Main.storyboard */,
+				755BF2AF29D22240007A33EE /* SecondViewController.swift */,
+				755BF2B129D22261007A33EE /* ThirdViewController.swift */,
+				755BF2A729D221DA007A33EE /* Pizza.swift */,
+				755BF2A929D22207007A33EE /* Request.swift */,
+				755BF2AB29D22221007A33EE /* MyTableViewCell.swift */,
+				755BF2AC29D22221007A33EE /* MyTableViewCell.xib */,
 				755BF28029D21EBF007A33EE /* Assets.xcassets */,
 				755BF28229D21EBF007A33EE /* LaunchScreen.storyboard */,
 				755BF28529D21EBF007A33EE /* Info.plist */,
@@ -278,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				755BF28429D21EBF007A33EE /* LaunchScreen.storyboard in Resources */,
+				755BF2AE29D22221007A33EE /* MyTableViewCell.xib in Resources */,
 				755BF28129D21EBF007A33EE /* Assets.xcassets in Resources */,
 				755BF27F29D21EBE007A33EE /* Main.storyboard in Resources */,
 			);
@@ -407,9 +425,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				755BF2A829D221DA007A33EE /* Pizza.swift in Sources */,
 				755BF27C29D21EBE007A33EE /* ViewController.swift in Sources */,
+				755BF2AA29D22207007A33EE /* Request.swift in Sources */,
 				755BF27829D21EBE007A33EE /* AppDelegate.swift in Sources */,
+				755BF2B029D22240007A33EE /* SecondViewController.swift in Sources */,
 				755BF27A29D21EBE007A33EE /* SceneDelegate.swift in Sources */,
+				755BF2B229D22261007A33EE /* ThirdViewController.swift in Sources */,
+				755BF2AD29D22221007A33EE /* MyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
