@@ -28,4 +28,11 @@ class SecondViewController: UIViewController {
         pricePizza2.text = "Pizza Media: R$\(connection2?.priceM ?? 0.0)"
         pricePizza3.text = "Pizza Grande: R$\(connection2?.priceG ?? 0.0)"
     }
+    
+    @IBAction func myButton(_ sender: Any) {
+        if let mySecondScreen = self.storyboard?.instantiateViewController(withIdentifier: "screenThree") as? ThirdViewController {
+            mySecondScreen.connection3 = self.connection2
+            self.navigationController?.pushViewController(mySecondScreen, animated: true)
+        }
+    }
 }
