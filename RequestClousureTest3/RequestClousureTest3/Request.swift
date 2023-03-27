@@ -19,5 +19,4 @@ class Request: NSObject {
             completion(pizza)
         }
     }
-
 }
