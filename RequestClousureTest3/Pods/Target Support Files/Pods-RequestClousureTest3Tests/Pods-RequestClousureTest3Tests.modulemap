@@ -1,0 +1,6 @@
+framework module Pods_RequestClousureTest3Tests {
+  umbrella header "Pods-RequestClousureTest3Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
