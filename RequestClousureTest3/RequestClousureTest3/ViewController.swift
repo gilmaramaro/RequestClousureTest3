@@ -12,14 +12,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var myTableView: UITableView!
     
     var request = Request()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupTableView()
+        requestPizza()
     }
-
+    
     func setupTableView() {
-        
+        self.myTableView.dataSource = self
+        self.myTableView.delegate = self
+        let UINIB = UINib(nibName: "MyTableViewCell", bundle: nil)
+        myTableView.register(UINIB, forCellReuseIdentifier: "Cell")
+    }
+    
+    func requestPizza() {
+        request.requestPizza { myRequestPizza in
+            self.request.arrayPizza = myRequestPizza
+            self.myTableView.reloadData()
+        }
     }
 }
 
@@ -34,5 +45,14 @@ extension ViewController: UITableViewDataSource {
             return cell
         }
         return UITableViewCell()
+    }
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let myScreen = self.storyboard?.instantiateViewController(withIdentifier: "screenTwo") as? SecondViewController {
+            myScreen.connection2 = self.request.arrayPizza?[indexPath.row]
+            self.navigationController?.pushViewController(myScreen, animated: true)
+        }
     }
 }
